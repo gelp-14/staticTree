@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>erm-hello</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+</head>
+<body>
+    <div class="erm-header">
+        <p class="header-text">国美互联网ERM2.0系统</p>
+        <div class="header-text-icon">
+            <ul>
+                <li class=""><i class="hello-icon1"></i><a>ermadmin</a></li>
+                <li class="header-hello-icon"><i class="hello-icon2"></i><a>修改密码</a></li>
+                <li class="header-hello-icon"><i class="hello-icon3"></i><a>退出</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="erm-content">
+        <div class="erm-navigation">
+            <div class="erm-left-search">
+                <input type="text" value="输入查询菜单名称">
+            </div>
+        </div>
+        <div class="erm-ermContent"></div>
+    </div>
+
+
+<script src="../js/public/jquery-1.11.3.min.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+var x = new Date('2014/4/3 17:35:34');  
+var y = new Date('2014/4/12 17:35:34');  
+var z = new Date('2014/4/15 17:35:34');  
+  
+/*var arr = new Array(); */ 
+var arr = [];
+arr.push(x);  
+arr.push(y);  
+arr.push(z);  
+arr.sort(function(a, b){  
+    return a < b ? 1 : -1; // 这里改为大于号  升序    小于号 降序
+});  
+alert(arr[0]+"\n"+ arr[1]+"\n"+arr[2]);  
+</script>
+</body>
+</html>
